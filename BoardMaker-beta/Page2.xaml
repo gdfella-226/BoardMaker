@@ -1,0 +1,55 @@
+﻿<Page x:Class="BoardMaker_beta.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BoardMaker_beta"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="600"
+      Title="Page2">
+
+    <Grid>
+        <Label Content="Введите код активации" HorizontalAlignment="Center" Margin="200,74,149,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        <Button Margin="449,240,30,133" Background="White" BorderThickness="3" Content="ОК" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <TextBox x:Name="codeField" Margin="30,135,30,239" FontSize="16" BorderThickness="3" MaxLines="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Button Margin="30,240,449,133" Background="White" BorderThickness="3" Content="Отменить" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.501,0.5" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="errorLabel" Content="Код активации неверный" HorizontalAlignment="Left" Margin="30,186,0,0" VerticalAlignment="Top" Width="156" Foreground="Red" FontStyle="Italic"/>
+
+    </Grid>
+</Page>

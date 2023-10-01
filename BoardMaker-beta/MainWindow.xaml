@@ -8,6 +8,16 @@
         Title="" Height="450" Width="800">
     <Grid>
         <Rectangle Fill="#FFD9D9D9" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="200"/>
+        <Canvas Margin="-10,0,0,0">
+            <Rectangle HorizontalAlignment="Left"  Height="139" Width="170" Stroke="Gray" RadiusX="20" RadiusY="20" StrokeThickness="2" Canvas.Left="22" Canvas.Top="39" VerticalAlignment="Center">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Gray" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Line X1="27.5" Y1="49" X2="198" Y2="180" Stroke="LightGray" StrokeThickness="2" Canvas.Left="-4" Canvas.Top="-4" />
+            <Line X1="198" Y1="49" X2="28" Y2="180" Stroke="LightGray" StrokeThickness="2" HorizontalAlignment="Left" Canvas.Left="-8" VerticalAlignment="Top" Canvas.Top="-5" />
+        </Canvas>
+
         <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="420" Margin="200,0,0,0" VerticalAlignment="Top" Width="600
                " NavigationUIVisibility="Hidden"/>
 

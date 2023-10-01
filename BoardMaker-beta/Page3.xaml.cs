@@ -29,5 +29,9 @@ namespace BoardMaker_beta
         {
             this.NavigationService.Navigate(new Page4());
         }
+        private void MouseButton(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page5());
+        }
     }
 }

@@ -5,8 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BoardMaker_beta"
       mc:Ignorable="d" 
-      d:DesignHeight="420" d:DesignWidth="6
-      00"
+      d:DesignHeight="420" d:DesignWidth="600"
       Title="Page1">
 
     <Grid>

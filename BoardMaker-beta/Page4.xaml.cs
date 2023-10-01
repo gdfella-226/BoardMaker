@@ -20,17 +20,36 @@ namespace BoardMaker_beta
     /// </summary>
     public partial class Page4 : Page
     {
+        BitmapImage yes = new BitmapImage(new Uri(@"/correct.png", UriKind.Relative));
+        BitmapImage no = new BitmapImage(new Uri(@"/remove.png", UriKind.Relative));
         public Page4()
         {
             InitializeComponent();
         }
 
-        private void codeField_Copy1_TextChanged(object sender, TextChangedEventArgs e)
+        private void codeField_Copy1_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            if(name_field.Text.Length > 3)
-            {
-                
-            }
+            if(nameField.Text.Length > 0 && !nameField.Text.Equals("Имя"))
+                nameValid.Source = yes;
+            else
+                nameValid.Source = no;
+        }
+
+        private void Enter(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page3());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page1());
+        }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text == "Имя")
+                textBox.Text = "";
         }
     }
 }

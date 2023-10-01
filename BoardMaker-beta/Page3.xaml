@@ -9,7 +9,7 @@
       Title="Page3">
     <Grid>
         <Label Content="Вход в учетую запись" HorizontalAlignment="Left" Margin="210,38,0,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
-        <Button Margin="163,241,149,132" Background="#B27B7777" BorderThickness="3" Content="Войти" FontFamily="Segoe UI Semibold" Click="Button_Click_1" FontWeight="Normal">
+        <Button Margin="163,241,149,132" Background="#B27B7777" BorderThickness="3" Content="Войти" FontFamily="Segoe UI Semibold" FontWeight="Normal">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -22,7 +22,7 @@
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <TextBox x:Name="codeField" Margin="163,99,149,275" FontSize="16" BorderThickness="3" MaxLines="1" Text="Электронная почта">
+        <TextBox x:Name="codeField" GotFocus="MailGotFocus" LostFocus="MailLostFocus" Margin="163,99,149,275" FontSize="16" BorderThickness="3" MaxLines="1" Text="Электронная почта">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -36,7 +36,7 @@
             </TextBox.BorderBrush>
         </TextBox>
         <Label x:Name="errorLabel" Content="или" HorizontalAlignment="Left" Margin="295,289,0,0" VerticalAlignment="Top" Width="30" Foreground="#FF585858" FontStyle="Normal"/>
-        <TextBox x:Name="codeField_Copy" Margin="163,151,149,223" FontSize="16" BorderThickness="3" MaxLines="1" Text="Пароль">
+        <TextBox x:Name="codeField_Copy" GotFocus="PassGotFocus" LostFocus="PassLostFocus" Margin="163,151,149,223" FontSize="16" BorderThickness="3" MaxLines="1" Text="Пароль">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>

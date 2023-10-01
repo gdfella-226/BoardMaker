@@ -9,8 +9,8 @@
       Title="Page4">
 
     <Grid>
-        <Label Content="Создать учетую запись" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
-        <Button Margin="207,348,206,36" Background="#B27B7777" BorderThickness="3" Content="Создать учетую запись" FontFamily="Segoe UI Semibold"  FontWeight="Normal">
+        <Label Content="Создать учетую запись" HorizontalAlignment="Left" Margin="184,0,0,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        <Button Margin="154,351,183,33" Background="#B27B7777" BorderThickness="3" Content="Создать учетую запись" FontFamily="Segoe UI Semibold"  FontWeight="Normal" Click="Button_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -23,91 +23,91 @@
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <Label Content="Уже есть учетная запись?" HorizontalAlignment="Left" Margin="207,389,0,0" VerticalAlignment="Top" Width="154" Foreground="#FF585858" FontFamily="Source Sans Pro"/>
-        <TextBox x:Name="name_field" Margin="207,51,207,339" FontSize="16" BorderThickness="3" MaxLines="1" Text="Имя" TextChanged="codeField_Copy1_TextChanged">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <TextBox x:Name="codeField_Copy" Margin="207,101,207,289" FontSize="16" BorderThickness="3" MaxLines="1" Text="Фамилия" >
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <TextBox x:Name="codeField_Copy2" Margin="207,147,207,243" FontSize="16" BorderThickness="3" MaxLines="1" Text="Логин">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <TextBox x:Name="codeField_Copy3" Margin="207,197,207,193" FontSize="16" BorderThickness="3" MaxLines="1" Text="Электронная почта">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <TextBox x:Name="codeField_Copy4" Margin="207,248,207,142" FontSize="16" BorderThickness="3" MaxLines="1" Text="Пароль">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <TextBox x:Name="codeField_Copy5" Margin="207,298,207,92" FontSize="16" BorderThickness="3" MaxLines="1" Text="Подтвердите пароль">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.BorderBrush>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
-                </RadialGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
-        <Label Content="Войти" HorizontalAlignment="Left" Margin="346,389,0,0" VerticalAlignment="Top" Width="64" Foreground="Black" FontFamily="Source Sans Pro" FontWeight="Bold"/>
-        <Image x:Name="name_valid" HorizontalAlignment="Left" Height="30" Margin="410,51,0,0" VerticalAlignment="Top" Width="30" Source="/NO.png">
+        <Label Content="Уже есть учетная запись?" HorizontalAlignment="Left" Margin="180,391,0,0" VerticalAlignment="Top" Width="154" Foreground="#FF585858" FontFamily="Source Sans Pro"/>
+        <Label Content="Войти" MouseLeftButtonDown="Enter" HorizontalAlignment="Left" Margin="322,391,0,0" VerticalAlignment="Top" Width="64" Foreground="Black" FontFamily="Source Sans Pro" FontWeight="Bold"/>
+        <Image x:Name="nameValid" HorizontalAlignment="Left" Height="30" Margin="444,38,0,0" VerticalAlignment="Top" Width="30" Source="/NO.png">
             <Image.OpacityMask>
-                <ImageBrush ImageSource="/NO.png" TileMode="None" Stretch="Fill"/>
+                <ImageBrush Stretch="Uniform" ImageSource="remove.png"/>
             </Image.OpacityMask>
         </Image>
-
+        <TextBox x:Name="surnameField"  Margin="155,84,183,296" FontSize="16" BorderThickness="1" MaxLines="1" Text="Фамилия" Height="40">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7
+                            "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="loginField"  Margin="155,136,183,244" FontSize="16" BorderThickness="1" MaxLines="1" Text="Логин (минимум 3 символа)" Height="40">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7                             "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="nameField" GotFocus="TextBox_GotFocus"  Margin="155,33,183,347" FontSize="16" BorderThickness="1" MaxLines="1" Text="Имя" Height="40" TextChanged="codeField_Copy1_TextChanged_1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7                             "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="mailField"  Margin="155,191,183,189" FontSize="16" BorderThickness="1" MaxLines="1" Text="Электронная почта" Height="40">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7                             "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="passField"  Margin="155,249,183,131" FontSize="16" BorderThickness="1" MaxLines="1" Text="Пароль" Height="40">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7                             "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="pass2Field"  Margin="155,304,183,76" FontSize="16" BorderThickness="1" MaxLines="1" Text="Подтверждение пароля" Height="40">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7                             "/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.248"/>
+                </RadialGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
     </Grid>
 </Page>

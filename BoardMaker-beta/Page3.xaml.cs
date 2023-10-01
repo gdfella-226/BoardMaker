@@ -25,6 +25,46 @@ namespace BoardMaker_beta
             InitializeComponent();
         }
 
+        private void MailGotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text == "Электронная почта")
+            {
+                textBox.Text = "";
+
+            }
+        }
+
+        private void MailLostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = "Электронная почта";
+                textBox.Foreground = Brushes.Black; // Верните цвет текста обратно в серый
+            }
+        }
+
+        private void PassGotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text == "Пароль")
+            {
+                textBox.Text = "";
+
+            }
+        }
+
+        private void PassLostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = "Пароль";
+                textBox.Foreground = Brushes.Black; // Верните цвет текста обратно в серый
+            }
+        }
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page4());

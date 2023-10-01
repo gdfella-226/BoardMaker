@@ -10,7 +10,7 @@
 
     <Grid>
         <Label Content="Введите код активации" HorizontalAlignment="Center" Margin="200,74,149,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
-        <Button Margin="449,240,30,133" Background="White" BorderThickness="3" Content="ОК" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+        <Button Margin="449,240,30,133" Background="#B27B7777" BorderThickness="3" Content="ОК" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -18,12 +18,12 @@
             </Button.Resources>
             <Button.BorderBrush>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFE7E2E2" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.248"/>
+                    <GradientStop Color="#FF5B5B5B" Offset="1"/>
+                    <GradientStop Color="#FF5B5B5B" Offset="0.248"/>
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <TextBox x:Name="codeField" Margin="30,135,30,239" FontSize="16" BorderThickness="3" MaxLines="1">
+        <TextBox x:Name="codeField" Margin="30,135,30,239" FontSize="16" BorderThickness="3" MaxLines="1" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>

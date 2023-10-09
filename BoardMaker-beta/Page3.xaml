@@ -9,7 +9,7 @@
       Title="Page3">
     <Grid>
         <Label Content="Вход в учетую запись" HorizontalAlignment="Left" Margin="210,38,0,0" VerticalAlignment="Top" Width="251" FontSize="18" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
-        <Button Margin="163,241,149,132" Background="#B27B7777" BorderThickness="3" Content="Войти" FontFamily="Segoe UI Semibold" FontWeight="Normal">
+        <Button Margin="163,241,149,132" Background="#B27B7777" BorderThickness="3" Content="Войти" FontFamily="Segoe UI Semibold" FontWeight="Normal" Click="Shablon">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>

@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -68,6 +69,14 @@ namespace BoardMaker_beta
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page4());
+        }
+        private void Shablon(object sender, RoutedEventArgs e)
+        {
+            Window1 newWindow = new Window1(); 
+            
+            Window window=Window.GetWindow(this);
+            window.Close();
+            newWindow.Show();
         }
         private void MouseButton(object sender, RoutedEventArgs e)
         {

@@ -5,36 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BoardMaker_beta"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="1000">
-    <Window.Resources>
-        <ControlTemplate x:Key="TopMenuButtons" TargetType="Button">
-            <Grid Name="btn" Height="20" Width="40" Margin="20,0,0,0">
-                <Border>
-                    <Grid>
-                        <Label Content="{TemplateBinding Content}"  Background="Blue" FontSize="15" VerticalAlignment="Center"/>
-                    </Grid>
-                </Border>
-            </Grid>
-
-        </ControlTemplate>
-    </Window.Resources>
+        Title="Window1" WindowStyle="None" Height="528" Width="1040" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
 
-        <Grid Name="TopMenu" Grid.Row="0" Grid.ColumnSpan="3">
-            <Border BorderThickness="1" BorderBrush="LightBlue" Background="Transparent">
-                <StackPanel Orientation="Horizontal">
-                    <Button Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Главная"/>
-                    <Button Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Главная"/>
-                    <Button Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Главная"/>
-
-
+        <Grid Name="TopMenu">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Width="1684">
+                <StackPanel Orientation="Horizontal" Margin="400,0,0,0">
+                    <Button Width="109" Height="38" Content="Главная"/>
+                    <Button Width="109" Height="37" Content="Файл"/>
+                    <Button Width="109" Height="37" Content="Вид" />
+                    <Button Width="109" Height="38" Content="Интерфейс"/>
                 </StackPanel>
-
             </Border>
-        </Grid>
+            <Image Source="photo.png"  HorizontalAlignment="Left" Height="36" Margin="-2,2,0,0" VerticalAlignment="Top" Width="86"/>
+            <Button Margin="17,198,859,268" Background="White" BorderThickness="3"  Content="Войти" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.BorderBrush>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE7E2E2" Offset="1"/>
+                        <GradientStop Color="White" Offset="0.248"/>
+                    </RadialGradientBrush>
+                </Button.BorderBrush>
+            </Button>
 
-        <Rectangle Fill="#FFD9D9D9" HorizontalAlignment="Left" Height="433" VerticalAlignment="Center" Width="200"/>
-        <Button Margin="13,79,819,302" Background="White" BorderThickness="3"  Content="Новый проект" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+        </Grid>
+        <Rectangle Fill="#FFD9D9D9" HorizontalAlignment="Left" Height="432" VerticalAlignment="Top" Width="200" Margin="1,100,0,0"/>
+        <Button Margin="17,198,859,268" Background="White" BorderThickness="3"  Content="Новый проект" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -47,7 +47,7 @@
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <Button Margin="15,138,817,243" Background="White" BorderThickness="3"  Content="Открыть" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+        <Button Margin="18,280,858,186" Background="White" BorderThickness="3"  Content="Открыть" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -60,7 +60,7 @@
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <Button Margin="15,198,817,182" Background="White" BorderThickness="3"  Content="Создать из шаблона" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
+        <Button Margin="19,361,857,105" Background="White" BorderThickness="3"  Content="Создать из шаблона" FontFamily="Segoe UI Semibold" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -73,8 +73,5 @@
                 </RadialGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="65" Margin="0,2,0,0" VerticalAlignment="Top" Width="1000">
-            <Rectangle HorizontalAlignment="Center" Height="69" Stroke="Transparent" Fill="#1b76de" VerticalAlignment="Center" Width="1000"/>
-        </Border>
     </Grid>
 </Window>

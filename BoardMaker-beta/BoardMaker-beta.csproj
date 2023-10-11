@@ -161,5 +161,16 @@
   <ItemGroup>
     <Resource Include="correct.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="exit.png" />
+    <Resource Include="over.png" />
+    <Resource Include="resize.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

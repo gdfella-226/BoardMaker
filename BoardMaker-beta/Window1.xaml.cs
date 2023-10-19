@@ -31,7 +31,13 @@ namespace BoardMaker_beta
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            
+                Window2 newWindow = new Window2();
 
+                Window window = Window.GetWindow(this);
+                window.Close();
+                newWindow.Show();
+            }
         }
-    }
-}
+ }
+
